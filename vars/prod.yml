@@ -1,0 +1,5 @@
+---
+# <----------------------------------       First Run       ----------------------------------> #
+vm_user: vagrant
+vm_password: "{{ lookup('env', 'VM_PASSWORD') }}"
+sys_packages: ['curl', 'git', 'ufw', 'tree']
