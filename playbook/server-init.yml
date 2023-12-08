@@ -1,0 +1,9 @@
+---
+- name: Initilisae a new host
+  hosts: NewHost
+  gather_facts: false
+  vars_files:
+    - vars/prod.yml
+
+  roles:
+    - role: run_first
